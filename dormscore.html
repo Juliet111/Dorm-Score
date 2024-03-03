@@ -25,7 +25,7 @@
            max-width: 800px;
            margin: 2em auto;
            padding: 1em;
-           background-color: #6355b3;
+           background-color: #8a7bdf;
            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
            text-align: center; /* Center-align box container */
        }
@@ -71,7 +71,7 @@
    <section>
        <h2>Universities</h2>
        <p>We have chosen to rank three local universities based on the <b>accessibility of their freshman dorms</b>. We chose three different kinds of universities, <b>a Cal State</b>, <b>a UC</b>, and <b>a Private School</b>. We are comparing the top (according to Google) dorm from each school. Accessibility will be based on three catergories: <b>ease of requesting accommodations</b>, <b>polices on service animals</b>, and <b>access to dorm facilities</b>. </p>
-       
+
        <!-- Box 1 -->
        <div class="box" onclick="showDescription('Box 1')">University of Southern California
            <img src="https://dormaccessibility.files.wordpress.com/2024/03/usc-logo.jpg" alt="Image 1">
@@ -103,12 +103,12 @@
         var descriptionContainer = document.getElementById('description');
         switch (box) {
             case 'Box 1':
-                descriptionContainer.innerHTML = 'Description for Box 1: Add your details here.';
+                descriptionContainer.innerHTML = '<span style="font-family: \'Times New Roman\', Times, serif; color: black; font-size: 1.1em;">Description for Box 1: Add your details here.</span>';
                 break;
             case 'Box 2':
                 descriptionContainer.innerHTML = `
-                    <h2> Sproul Cove 3/5</h2>
-                    <p>
+                    <h2 style="font-family: 'Times New Roman', Times, serif; color: black; font-size: 1.1em;">Sproul Cove 3.4/5</h2>
+                    <p style="font-family: 'Times New Roman', Times, serif; color: black; font-size: 1.1em; text-align: left;">
                         <strong>Requesting Accommodations 2/5:</strong> The school adheres to federal and state laws regarding what constitutes as a disability. Decidedly, a medical diagnosis as disabled is not sufficient to request accommodations. <br>
                         <strong>Service Animals 5/5:</strong> The school allows service animals with appropriate documentation. Service animals can only be dogs or miniature horses. In addition, there is a separate category for assistance animals, which can be any kind of animal. <br>
                         <strong>Access to Dorm Facilities 3/5:</strong> Elevators and air conditioning in the building. However, there are numerous stairs needed to enter the dorm, and rooms are double or triple occupancy.
@@ -116,13 +116,14 @@
                 `;
                 break;
             case 'Box 3':
-                descriptionContainer.innerHTML = 'Description for Box 3: Add your details here.';
+                descriptionContainer.innerHTML = '<span style="font-family: \'Times New Roman\', Times, serif; color: black; font-size: 1.1em;">Description for Box 3: Add your details here.</span>';
                 break;
             default:
-                descriptionContainer.innerHTML = 'No description available.';
+                descriptionContainer.innerHTML = '<span style="font-family: \'Times New Roman\', Times, serif; color: black; font-size: 1.1em;">No description available.</span>';
                 break;
         }
     }
-   </script>
+    </script>
+
 </body>
 </html>
