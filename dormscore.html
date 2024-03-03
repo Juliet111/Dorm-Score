@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Your Website Title</title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #f4f4f4;
+       }
+
+
+       header {
+           background-color: rgb(185, 184, 251);
+           color: #faf4f4;
+           text-align: center;
+           padding: 1em;
+       }
+
+
+       section {
+           max-width: 800px;
+           margin: 2em auto;
+           padding: 1em;
+           background-color: #6355b3;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           text-align: center; /* Center-align box container */
+       }
+
+
+       .box {
+           display: inline-block;
+           width: 300px;
+           height: 100px;
+           margin: 10px;
+           border: 2px solid rgb(185, 184, 251);
+           cursor: pointer;
+           overflow: hidden;
+       }
+
+
+       .box img {
+           width: 70%; /* Make the image fill the entire box */
+           height: 70%;
+           object-fit: contain;
+        }
+       
+
+
+       footer {
+           background-color: rgb(185, 184, 251);
+           color: #fff;
+           text-align: center;
+           padding: 1em;
+           width: 100%;
+           bottom: 0;
+       }
+   </style>
+</head>
+<body>
+
+
+   <header>
+       <h1>Dorm Accessibility Rankings</h1>
+   </header>
+
+
+   <section>
+       <h2>Universities</h2>
+       <p>We have chosen to rank three local universities based on the <b>accessibility of their freshman dorms</b>. We chose three different kinds of universities, <b>a Cal State</b>, <b>a UC</b>, and <b>a Private School</b>. We are comparing the top (according to Google) dorm from each school. Accessibility will be based on three catergories: <b>ease of requesting accommodations</b>, <b>polices on service animals</b>, and <b>access to dorm facilities</b>. </p>
+       
+       <!-- Box 1 -->
+       <div class="box" onclick="showDescription('Box 1')">University of Southern California
+           <img src="https://dormaccessibility.files.wordpress.com/2024/03/usc-logo.jpg" alt="Image 1">
+       </div>
+
+
+       
+       <!-- Box 2 -->
+       <div class="box" onclick="showDescription('Box 2')">University of California, Los Angeles
+           <img src="https://dormaccessibility.files.wordpress.com/2024/03/ucla_bruins_script.svg_.jpg?w=2048" alt="Image 2">
+       </div>
+       
+       
+       <!-- Box 3 -->
+       <div class="box" onclick="showDescription('Box 3')">California State University, Northridge
+           <img src="https://dormaccessibility.files.wordpress.com/2024/03/2560px-csu_northridge_logo.svg_.jpg?w=2048" alt="Image 3">
+       </div>
+       
+       <div id="description"></div> <!-- Container for displaying descriptions -->
+   </section>
+
+
+   <footer>
+       <p>&copy; Marleena Farah Juliat. All rights reserved.</p>
+   </footer>
+
+   <script>
+    function showDescription(box) {
+        var descriptionContainer = document.getElementById('description');
+        switch (box) {
+            case 'Box 1':
+                descriptionContainer.innerHTML = `
+                <h2> Parkside Apartments </h2>
+                <p>
+                    <strong>Requesting Accommodations 5/5:</strong> The University follows all applicable state and federal laws regarding accommodation of individuals with physical and mental disabilities. <br>
+                    <strong>Service Animals 5/5:</strong> The University of Southern California permits the presence of trained Service Animals assisting individuals with disabilities on its campus in areas open to the public, consistent with the provisions of this policy and applicable law. <br>
+                    <strong>Access to Dorm Facilities 5/5:</strong> Elevators and air conditioning in the building. They also have 'Office of Student Accessibility Services (OSAS)' service which accommodates students with documented disabilities to allow equal standing in educational endeavors.
+                </p>
+                `;
+
+                break;
+            case 'Box 2':
+                descriptionContainer.innerHTML = `
+                    <h2> Sproul Cove 3/5</h2>
+                    <p>
+                        <strong>Requesting Accommodations 2/5:</strong> The school adheres to federal and state laws regarding what constitutes as a disability. Decidedly, a medical diagnosis as disabled is not sufficient to request accommodations. <br>
+                        <strong>Service Animals 5/5:</strong> The school allows service animals with appropriate documentation. Service animals can only be dogs or miniature horses. In addition, there is a separate category for assistance animals, which can be any kind of animal. <br>
+                        <strong>Access to Dorm Facilities 3/5:</strong> Elevators and air conditioning in the building. However, there are numerous stairs needed to enter the dorm, and rooms are double or triple occupancy.
+                    </p>
+                `;
+                break;
+            case 'Box 3':
+                descriptionContainer.innerHTML = 'Description for Box 3: Add your details here.';
+                break;
+            default:
+                descriptionContainer.innerHTML = 'No description available.';
+                break;
+        }
+    }
+   </script>
+</body>
+</html>
