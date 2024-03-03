@@ -85,6 +85,17 @@
             margin-top: 20px;
             border-radius: 10px;
         }
+        .review-link {
+            display: block;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 20px auto;
+            width: fit-content;
+            padding: 10px 20px;
+            background-color: #8a7bdf;
+            color: #fff;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -131,6 +142,9 @@
 
     <!-- Google Maps container -->
     <div id="map"></div>
+    <!-- Review button -->
+    <a href="review.html" class="review-link">Review</a>
+    <p id="review-description">Click the "Review" button to leave your feedback about the dorm accessibility.</p>
 </section>
 
 <footer>
@@ -175,13 +189,12 @@
             case 'Box 3':
                 descriptionContainer.innerHTML = `
                     <div style="text-align: left;">
-                        <h2>The Park Apartments</h2>
+                        <h2>The Park Apartments 4/5</h2>
                         <img src="https://dormaccessibility.files.wordpress.com/2024/03/2560px-csu_northridge_logo.svg_.jpg?w=1024" alt="Image 1" style="width: 100%; border-radius: 10px 10px 0 0;">
-                        <p style="padding: 10px;">
-                            <strong>Requesting Accommodations 5/5:</strong> The University follows all applicable state and federal laws regarding accommodation of individuals with physical and mental disabilities. <br>
-                            <strong>Service Animals 5/5:</strong> The University of Southern California permits the presence of trained Service Animals assisting individuals with disabilities on its campus in areas open to the public, consistent with the provisions of this policy and applicable law. <br>
-                            <strong>Access to Dorm Facilities 5/5:</strong> Elevators and air conditioning in the building. They also have 'Office of Student Accessibility Services (OSAS)' service which accommodates students with documented disabilities to allow equal standing in educational endeavors.
-                        </p>
+                        <strong>Requesting Accommodations 5/5:</strong> Disability Resources and Educational Services (DRES) offers accommodations to ensure access and support services to promote success. Reasonable accommodations are determined individually Accommodations are provided on a case-by-case basis.<br>
+                        <strong>Service Animal 3/5:</strong> No animals shall be permitted inside University facilities with the exception of those authorized by the responsible administrative Dean. Service animals must be licensed in accordance with county regulations, wear a vaccination tag, and be on a leash.<br>
+                        <strong>Access to Dorm Facilities 4/5:</strong> You are encouraged to speak with a DRES Counselor to explore reasonable accommodations and discuss issues related to access. The DRES Counselor will determine your eligibility for services and authorize any accommodations or support services.
+                    </p>
                     </div>
                 `;
                 mapContainer.style.display = 'block'; // Display the map
