@@ -53,20 +53,21 @@
     <body>
         <h1>Review Your Dorm</h1>
         <p id="description">Fill out the form below to submit a review!</p>
-        <form action="confirmation_page.html">
+        <!-- note to self: replace the action text with any page name .html to redirect :) -->
+        <form action="dormscore.html" method="get"> 
 
             <div class = "row">
                 <div class = "left">
                 <label for="name-id"><b>Name:</b></label>
                 </div>
-                <input type="text" id="name-id" placeholder="Tommy Trojan">
+                <input type="text" id="name-id" placeholder="Susan Roth">
             </div>
 
             <div class = "row">
                 <div class = "left">
                 <label for="email-id"><b>Email:</b></label>
                 </div>
-                <input type="email" id="email-id" placeholder="ttrojan@usc.edu">
+                <input type="email" id="email-id" placeholder="myemail@vc.edu">
             </div>
 
             <div class = "row">
@@ -75,17 +76,17 @@
                 </div>
 
                 <label>
-                    <input type="radio" name="year">
+                    <input type="radio" name="University">
                     USC
                 </label>
 
                 <label>
-                    <input type="radio" name="year">
+                    <input type="radio" name="University">
                     UCLA
                 </label>
 
                 <label>
-                    <input type="radio" name="year">
+                    <input type="radio" name="University">
                     CSUN
                 </label>
             </div>
@@ -156,7 +157,7 @@
 
         </form>
         <div id="footer">
-            Special Thanks to AthenaHacks
+            Special Thanks to AthenaHacks Team
         </div>
     </body>
 </html>
