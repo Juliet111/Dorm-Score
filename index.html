@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+      }
+
+
+
+
+      header {
+          background-color: rgb(185, 184, 251);
+          color: #fff;
+          text-align: center;
+          padding: 1em;
+      }
+
+
+
+
+      section {
+          max-width: 800px;
+          margin: 2em auto;
+          padding: 1em;
+          background-color: #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          text-align: center; /* Center-align box container */
+      }
+
+
+
+
+      .box {
+          display: inline-block;
+          width: 300px;
+          height: 100px;
+          margin: 10px;
+          border: 2px solid rgb(185, 184, 251);
+          cursor: pointer;
+          overflow: hidden;
+      }
+
+
+
+
+      .box img {
+          width: 70%; /* Make the image fill the entire box */
+          height: 70%;
+          object-fit: contain;
+       }
+      
+    
+
+
+
+
+      footer {
+          background-color: rgb(185, 184, 251);
+          color: #fff;
+          text-align: center;
+          padding: 1em;
+          position: fixed;
+          width: 100%;
+          bottom: 0;
+      }
+  </style>
+</head>
+<body>
+
+
+
+
+  <header>
+      <h1>Dorm Accessibility Rankings</h1>
+  </header>
+
+
+
+
+  <section>
+      <h2>Welcome to Our Website!</h2>
+      <p>We have chosen to rank three of the most popular universities in Southern California based on the accessibility of their freshman dorms. We chose three different kinds of universities, a Cal State, a UC, and a Private. We are ranking a single dorm from each school. Accessibility will be based on three catergories, <b>ease of requesting accommodations</b>, <b>polices on service animals</b>, <b>what accommodations are actually avalible</b>. </p>
+      
+      <!-- Box 1 -->
+      <div class="box" onclick="showDescription('Box 1')">University of Southern California
+          <img src="https://dormaccessibility.files.wordpress.com/2024/03/usc-logo.jpg" alt="Image 1">
+      </div>
+
+
+
+
+      
+      <!-- Box 2 -->
+      <div class="box" onclick="showDescription('Box 2')">University of California, Los Angeles
+          <img src="https://dormaccessibility.files.wordpress.com/2024/03/ucla_bruins_script.svg_.jpg?w=2048" alt="Image 2">
+      </div>
+      
+      
+      <!-- Box 3 -->
+      <div class="box" onclick="showDescription('Box 3')">California State University, Northridge
+          <img src="https://dormaccessibility.files.wordpress.com/2024/03/2560px-csu_northridge_logo.svg_.jpg?w=2048" alt="Image 3">
+      </div>
+      
+      <div id="description"></div> <!-- Container for displaying descriptions -->
+  </section>
+
+
+
+
+  <footer>
+      <p>&copy; Marleena Farah Juliette. All rights reserved.</p>
+  </footer>
+
+
+
+
+  <script>
+      function showDescription(box) {
+          // Function to display descriptions based on clicked box
+          var descriptionContainer = document.getElementById('description');
+          switch (box) {
+              case 'Box 1':
+                  descriptionContainer.innerHTML = 'Description for Box 1: Add your details here.';
+                  break;
+              case 'Box 2':
+                  descriptionContainer.innerHTML = 'Description for Box 2: Add your details here.';
+                  break;
+              case 'Box 3':
+                  descriptionContainer.innerHTML = 'Description for Box 3: Add your details here.';
+                  break;
+              default:
+                  descriptionContainer.innerHTML = 'No description available.';
+                  break;
+          }
+      }
+  </script>
+</body>
+</html>
