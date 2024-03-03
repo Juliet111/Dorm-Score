@@ -164,7 +164,7 @@
                         <p style="padding: 10px;">
                             <strong>Requesting Accommodations 5/5:</strong> The University follows all applicable state and federal laws regarding accommodation of individuals with physical and mental disabilities. <br>
                             <strong>Service Animals 5/5:</strong> The University of Southern California permits the presence of trained Service Animals assisting individuals with disabilities on its campus in areas open to the public, consistent with the provisions of this policy and applicable law. <br>
-                            <strong>Access to Dorm Facilities 5/5:</strong> Elevators and air conditioning in the building. They also have 'Office of Student Accessibility Services (OSAS)' service which accommodates students with documented disabilities to allow equal standing in educational endeavors.
+                            <strong>Access to Dorm Facilities 5/5:</strong> Elevators and air conditioning in the building. Close to the Parkside Dining Hall and some academic buildings . Single dorms are avalible for students, but no mention on if they are ADA compliant.
                         </p>
                     </div>
                 `;
@@ -206,8 +206,8 @@
                         <h2>Vista Del Sol 4.6/5</h2>
                         <img src="https://dormaccessibility.files.wordpress.com/2024/03/cpplogo.jpg?w=1024" alt="Image 1" style="width: 100%; border-radius: 10px 10px 0 0;">
                         <p style="padding: 10px;">
-                            <strong>Requesting Accommodations 5/5:</strong>Students requesting a housing accommodations must follow the University Housing Services procedures and submit disability documentation to DRC. Accommodations in housing are approved on a case by case basis and are dependent on the nature of the disability and/or health condition as well as the impact in the campus living environment. <br>
-                            <strong>Service Animals 4/5:</strong> They allow service animal. They do not specify the type of animal a student can have as a service animal. The webpage with the info about service animal is broken. <br>
+                            <strong>Requesting Accommodations 4/5:</strong>Students requesting a housing accommodations must follow the University Housing Services procedures and submit disability documentation to DRC. Accommodations in housing are approved on a case by case basis and are dependent on the nature of the disability and/or health condition as well as the impact in the campus living environment. <br>
+                            <strong>Service Animals 5/5:</strong> They allow service animal. They do not specify the type of animal a student can have as a service animal. The webpage with the info about service animal is broken. <br>
                             <strong>Access to Dorm Facilities 5/5:</strong> Dorms are equipped with multiple elevators . The unit plans are also available in an ADA-compliant model.
                         </p>
                     </div>
@@ -233,12 +233,12 @@
             case 'Box 6':
                 descriptionContainer.innerHTML = `
                     <div style="text-align: left;">
-                        <h2>Single Room Classic Dorm 4/5</h2>
+                        <h2>Vista del Campo 4.6/5</h2>
                         <img src="https://dormaccessibility.files.wordpress.com/2024/03/ucilogo.png?w=1024" alt="Image 1" style="width: 100%; border-radius: 10px 10px 0 0;">
                         <p style="padding: 10px;">
-                            <strong>Requesting Accommodations</strong> UC Irvine Student Housing works in close partnership with the Disability Services Center (www.disability.uci.edu). Housing accommodation decisions where physical, medical, psychological, or developmental needs are to be taken into consideration are based on written recommendation from the Disability Services Center. <br>
-                        <strong>Service Animals</strong>We welcome patients who require a service animal that is individually trained to perform tasks for a person with a disability. If you have a service animal that meets the definition of one according to the Americans with Disabilities Act (ADA), you can bring your animal to all public areas of the medical center. <br>
-                        <strong>Access to Dorm Facilities</strong> Provides access to dorms with rams and elevator on each dorm building.
+                            <strong>Requesting Accommodations 5/5:</strong> UC Irvine Student Housing works in close partnership with <a href="https://dsc.uci.edu/">the Disability Services Center </a>. Housing accommodation decisions where physical, medical, psychological, or developmental needs are to be taken into consideration are based on written recommendation from the Disability Services Center. <br>
+                        <strong>Service Animals 4/5:</strong>Welcomes patients who require a service animal that is individually trained to perform tasks for a person with a disability. If you have a service animal that meets the definition of one according to the Americans with Disabilities Act (ADA), you can bring your animal to all public areas of the medical center. No mention of assitance animals <br>
+                        <strong>Access to Dorm Facilities 5/5:</strong> Provides access to dorm with rams and elevator in the building. Convient place on campus is relation to academic buildings.
                 </div>
                 `;
                 mapContainer.style.display = 'block'; // Display the map
@@ -250,7 +250,7 @@
     var map; // Variable to hold the map object
 
     // Function to initialize the map
-    function initializeMap(schoolName) {
+    async function initializeMap(schoolName) {
         var mapOptions = {
             zoom: 15,
             mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -271,14 +271,14 @@
             case 'California State University, Northridge':
                 centerCoords = { lat: 34.24839, lng: -118.52476 };
                 break;
-            case 'California State Polytechnic University Pomona':
-                centerCoords = { lat: 34.0564, lng: -117.8213 };
+            case 'California State Polytechnic University, Pomona':
+                centerCoords = { lat: 34.05489, lng: -117.81802 };
                 break;
             case 'University of California, Los Angeles':
-                centerCoords = { lat: 34.0689, lng: -118.4452 };
+                centerCoords = { lat: 34.07188, lng: -118.45093 };
                 break;
             case 'University of California, Irvine':
-                centerCoords = { lat: 33.6405, lng: -117.8443 };
+                centerCoords = { lat: 33.64441, lng: -117.82315 };
                 break;
             default:
                 centerCoords = { lat: 34.052235, lng: -118.243683 }; // Default coordinates for Los Angeles
@@ -297,7 +297,7 @@
 </script>
 
 <!-- Google Maps JavaScript API -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-za8wQgj4f3orbuSeewQ3E49L26i7HfQ&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-za8wQgj4f3orbuSeewQ3E49L26i7HfQ&callback=initializeMap" async defer></script>
 
 </body>
 </html>
