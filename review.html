@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Review Your Dorm
+        </title>
+        <style>
+            body {
+                background: #f7ecff;
+            }
+            h1 {
+                text-align: center;
+            }
+            #description {
+                text-align: center;
+            }
+            .left {
+                width: 170px;
+                height: auto;
+                padding: 10px;
+                float: left;
+                background-color: rgb(240, 221, 245);
+                text-align: right;
+            }
+            .row {
+                margin: 10px 0px;
+                background-color: rgb(240, 221, 245);
+                display: flex;
+            }
+            button {
+                margin: 10px;
+                background-color: rgba(240,221,245);
+            }
+            input {
+                margin: 10px;
+            }
+            select {
+                margin: 10px;
+            }
+            textarea {
+                margin: 10px;
+            }
+            #footer {
+                background-color: rgba(155,192,201);
+                margin-left: auto;
+                margin-right: auto;
+
+                color: rgb(37, 59, 63);
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Review Your Dorm</h1>
+        <p id="description">Fill out the form below to submit a review!</p>
+        <form action="confirmation_page.html">
+
+            <div class = "row">
+                <div class = "left">
+                <label for="name-id"><b>Name:</b></label>
+                </div>
+                <input type="text" id="name-id" placeholder="Tommy Trojan">
+            </div>
+
+            <div class = "row">
+                <div class = "left">
+                <label for="email-id"><b>Email:</b></label>
+                </div>
+                <input type="email" id="email-id" placeholder="ttrojan@usc.edu">
+            </div>
+
+            <div class = "row">
+                <div class = "left">
+                <b>Pick a university you want to review:</b>
+                </div>
+
+                <label>
+                    <input type="radio" name="year">
+                    USC
+                </label>
+
+                <label>
+                    <input type="radio" name="year">
+                    UCLA
+                </label>
+
+                <label>
+                    <input type="radio" name="year">
+                    CSUN
+                </label>
+            </div>
+
+            <div class = "row">
+                <div class = "left">
+                <b>Pick your dorm:</b>
+                </div>
+                <label>
+                    <input type="checkbox">
+                    Parkside Apartments
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Sproul Cove
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    CSUN
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Others
+                </label>
+            </div>
+
+            <div class = "row">
+                <div class = "left">
+                    <b>Heard about us from:</b>
+                </div>
+                <select>
+                    <option>A friend/acquaintance</option>
+                    <option>Involvement fair</option>
+                    <option>Email blasts</option>
+                    <option>Promotional flyers</option>
+                    <option>Social media</option>
+                    <option>Other</option>
+                </select>
+
+            </div>
+
+            <div class = "row">
+                <div class = "left">
+                <b>Review:</b>
+                </div>
+
+                <textarea placeholder="Please leave any feedback!"></textarea>
+            </div>
+
+            <div class = "row">
+                <div class = "left">
+                </div>
+                <label>
+                    <input type="checkbox">
+                    I accept the terms and conditions
+                </label>
+            </div>
+
+            <div class = "row">
+                <div class = "left">
+                </div>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </div>
+
+        </form>
+        <div id="footer">
+            AthenaHacks x CTC &copy; 2023
+        </div>
+    </body>
+</html>
