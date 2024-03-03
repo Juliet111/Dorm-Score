@@ -54,7 +54,7 @@
         <h1>Review Your Dorm</h1>
         <p id="description">Fill out the form below to submit a review!</p>
         <!-- note to self: replace the action text with any page name .html to redirect :) -->
-        <form action="dormscore.html" method="get"> 
+        <!-- <form>  -->
 
             <div class = "row">
                 <div class = "left">
@@ -76,32 +76,32 @@
                 </div>
 
                 <label>
-                    <input type="radio" name="University">
+                    <input type="radio" name="University" class="uni">
                     USC
                 </label>
 
                 <label>
-                    <input type="radio" name="University">
+                    <input type="radio" name="University" class="uni">
                     UCLA
                 </label>
 
                 <label>
-                    <input type="radio" name="University">
+                    <input type="radio" name="University" class="uni">
                     CSUN
                 </label>
 
                 <label>
-                    <input type="radio" name="University">
+                    <input type="radio" name="University" class="uni">
                     Cal Poly Pomona
                 </label>
 
                 <label>
-                    <input type="radio" name="University">
+                    <input type="radio" name="University" class="uni">
                     UCI
                 </label>
 
                 <label>
-                    <input type="radio" name="University">
+                    <input type="radio" name="University" class="uni">
                     LMU
                 </label>
             </div>
@@ -111,37 +111,37 @@
                 <b>Pick your dorm:</b>
                 </div>
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" class="dorm" value="Parkside Apartments">
                     Parkside Apartments
                 </label>
 
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" class="dorm" value="Sproul Cove">
                     Sproul Cove
                 </label>
 
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" class="dorm" value="Palm North">
                     Palm North
                 </label>
 
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" class="dorm" value="The Park Apartments">
                     The Park Apartments
                 </label>
 
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" class="dorm" value="Vista Del Sol">
                     Vista Del Sol
                 </label>
 
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" value="UCI Single Room Classic" class="dorm">
                     UCI Single Room Classic
                 </label>
 
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" class="dorm" value="Others">
                     Others
                 </label>
             </div>
@@ -150,7 +150,7 @@
                 <div class = "left">
                     <b>Heard about us from:</b>
                 </div>
-                <select>
+                <select id="referal">
                     <option>A friend/acquaintance</option>
                     <option>Involvement fair</option>
                     <option>Email blasts</option>
@@ -166,7 +166,7 @@
                 <b>Review:</b>
                 </div>
 
-                <textarea placeholder="Please leave any detailed feedback!"></textarea>
+                <textarea placeholder="Please leave any detailed feedback!" id="feedback"></textarea>
             </div>
 
             <div class = "row">
@@ -181,13 +181,14 @@
             <div class = "row">
                 <div class = "left">
                 </div>
-                <button type="submit">Submit</button>
+                <button id="submit-button">Submit</button>
                 <button type="reset">Clear</button>
             </div>
 
-        </form>
+        <!-- </form> -->
         <div id="footer">
             Special Thanks to AthenaHacks Team
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

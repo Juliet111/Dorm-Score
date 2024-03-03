@@ -159,7 +159,7 @@
             case 'Box 1':
                 descriptionContainer.innerHTML = `
                     <div style="text-align: left;">
-                        <h2>Parkside Apartments</h2>
+                        <h2>Parkside Apartments 5/5</h2>
                         <img src="https://dormaccessibility.files.wordpress.com/2024/03/usc-logo.jpg" alt="Image 1" style="width: 100%; border-radius: 10px 10px 0 0;">
                         <p style="padding: 10px;">
                             <strong>Requesting Accommodations 5/5:</strong> The University follows all applicable state and federal laws regarding accommodation of individuals with physical and mental disabilities. <br>
@@ -231,18 +231,16 @@
                 initializeMap(schoolName); // Initialize the map with the selected school
                 break;
             case 'Box 6':
-                descriptionContainer.innerHTML = `
-                    <div style="text-align: left;">
-                        <h2>Single Room Classic Dorm 4/5</h2>
-                        <img src="https://dormaccessibility.files.wordpress.com/2024/03/ucilogo.png?w=1024" alt="Image 1" style="width: 100%; border-radius: 10px 10px 0 0;">
-                        <p style="padding: 10px;">
-                            <strong>Requesting Accommodations</strong> UC Irvine Student Housing works in close partnership with the Disability Services Center (www.disability.uci.edu). Housing accommodation decisions where physical, medical, psychological, or developmental needs are to be taken into consideration are based on written recommendation from the Disability Services Center. <br>
-                        <strong>Service Animals</strong>We welcome patients who require a service animal that is individually trained to perform tasks for a person with a disability. If you have a service animal that meets the definition of one according to the Americans with Disabilities Act (ADA), you can bring your animal to all public areas of the medical center. <br>
+            descriptionContainer.innerHTML = `
+                <div style="text-align: left;">
+                    <h2>Single Room Classic Dorm 4/5</h2>
+                    <img src="IMAGE_URL_6" alt="Image 6" style="width: 100%; border-radius: 10px 10px 0 0;">
+                    <p style="padding: 10px;">
+                        <strong>Requesting Accommodations</strong> UC Irvine Student Housing works in close partnership with the Disability Services Center (www.disability.uci.edu). Housing accommodation decisions where physical, medical, psychological, or developmental needs are to be taken into consideration are based on written recommendation from the Disability Services Center <br>
+                        <strong>Service Animals</strong>We welcome patients who require a service animal that is individually trained to perform tasks for a person with a disability. If you have a service animal that meets the definition of one according to the Americans with Disabilities Act (ADA), you can bring your animal to all public areas of the medical center.. <br>
                         <strong>Access to Dorm Facilities</strong> Provides access to dorms with rams and elevator on each dorm building.
                 </div>
                 `;
-                mapContainer.style.display = 'block'; // Display the map
-                initializeMap(schoolName); // Initialize the map with the selected school
                 break;
         }
     }
